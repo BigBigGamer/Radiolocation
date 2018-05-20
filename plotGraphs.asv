@@ -35,8 +35,10 @@ b=1;
           DATE=DATE';
           %create string, according to
          varname=strcat(strcat(area,'_'),FrRange);
-              Out=table(NUM,THETA,RCDB,DATE);
-              Out.Properties.Description=varname;
+              description=varname;
+              eval(strcat(varname,'=table(NUM,THETA,RCDB,DATE);'));
+              eval(strcat('Out=',varname));
+              Out.Properties.Description=description;
               Out.Properties.VariableNames={'Num','Theta','Rc_Db','Date'};
     else %if there is angle range input, then do for given angles
             for i=1:height(data_set)
@@ -57,8 +59,10 @@ b=1;
               RCDB=RCDB(1:b-1);
               DATE=DATE';
               varname=strcat(strcat(area,'_'),FrRange);
-              Out=table(NUM,THETA,RCDB,DATE);
-              Out.Properties.Description=varname;
+              description=varname;
+              eval(strcat(varname,'=table(NUM,THETA,RCDB,DATE);'));
+              eval(strcat('Out=',varname));
+              Out.Properties.Description=description;
               Out.Properties.VariableNames={'Num','Theta','Rc_Db','Date'};
               
               
