@@ -2,11 +2,7 @@ function [Out] = plotGraphs(data_set,area,FrRange,varargin)
 % [Out]=plotGraphs(data_set,area,FrRange),where data_set is a N by 8 table
 %   of information taken from excel file,area is location,which is desired
 %   to get(leaf,pine, or veld), FrRange isfreaquency range (Ku or Ka). The
-%   output is a M by 4 table of data of needed area and freaquency range,
-%   formatted as follows: Point Number, Theta, Rc_Db, Date.
-%  [Out]=plotGraphs(data_set,area,FrRange,from,to) gives similar output, but
-%   only those rows, which theta's value is between from and too values.
-%   The algorithm sorts out rows, where rain value is not 0.
+%   output is 
 NUM=zeros(height(data_set),1);
 THETA=zeros(height(data_set),1);
 RCDB=zeros(height(data_set),1);
