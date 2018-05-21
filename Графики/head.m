@@ -1,4 +1,4 @@
-hh=figure ;
+
 hold on
 grid on
 grid minor
@@ -7,6 +7,12 @@ ylabel('rcs, Db');
 set(0,'defaultTextInterpreter','latex');
 set(0,'DefaultAxesFontSize',12);
 set(0,'DefaultTextFontSize',12);
+load('f_leaf_Ka.mat')
+load('f_leaf_Ka.mat')
+load('f_leaf_Ka.mat')
+load('f_leaf_Ka.mat')
+load('f_leaf_Ka.mat')
+load('f_leaf_Ka.mat')
 
 L_Ka=f_leaf_Ka.pp1;
 L1_Ka=f_leaf_Ka.pp2;
