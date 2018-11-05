@@ -1,2 +1,2 @@
 # Radiolocation
-optional kek
+GPM - based ice detection
